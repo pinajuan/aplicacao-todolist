@@ -10,6 +10,7 @@ import org.springframework.beans.BeanWrapperImpl;
 
 public class Utils {
     
+    // Mesclando as propriedades não nulas, ao tentar fazer um update de um objeto
     public static void copyNonNullProperties(Object source, Object target) {
         BeanUtils.copyProperties(source, target, getNullPropertyNames(source));
     }
